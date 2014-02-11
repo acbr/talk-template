@@ -14,6 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/theme/avenuecode.min.css" id="theme">
 
   <!-- If the query includes 'print-pdf', use the PDF print sheet -->
   <script>
@@ -21,56 +22,23 @@
   </script>
 
   <!--[if lt IE 9]>
-  <script src="js/html5shiv.min.js"></script>
+  <script src="js/lib/html5shiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
-<script type="text/template">Grunt: The Build Tool for Javascript
-====================================
-
-Rafael Guedes
-
-*rguedes@avenuecode.com*
-
-Avenue Code - 2014
-</script></section><section  ><section  data-markdown><script type="text/template">
-## Agenda
-
- - Overview
-  - Usage
-  - Installation
-  - Setup
- - Grunt syntax
-  - Sample Gruntfile
- - Demo Session
- - Conclusion
-  - Assignment
-</script></section><section  data-markdown><script type="text/template">
-## Prerequisites
-
-- Node
-- Node Package Manager (NPM)
-</script></section></section><section  ><section  data-markdown><script type="text/template">
-## Overview
-
-tl;dr
-> in one word: automation
-</script></section><section  data-markdown><script type="text/template">
-## Usage
-
- - JS/CSS Lint
- - Uglifying
- - Minifying
- - Concat static files
- - Hot deploy
- - Dev/Test Server
-</script></section>
+      <section>
+        <h1>Reveal.js</h1>
+        <h3>HTML Presentations Made Easy</h3>
+        <p>
+          <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+        </p>
+      </section>
     </div>
   </div>
 
-  <script src="js/scripts.min.js">
+  <script src="js/scripts.min.js"></script>
   <script>
 
       // Full list of configuration options available here:
@@ -91,12 +59,12 @@ tl;dr
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: 'js/lib/classList.min.js', condition: function() { return !document.body.classList; } },
+          { src: 'js/plugin/markdown/marked.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'js/plugin/markdown/markdown.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'js/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'js/plugin/zoom-js/zoom.min.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'js/plugin/notes/notes.min.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
 

@@ -50,11 +50,11 @@ module.exports = function(grunt) {
     },
     concat: {
       js: {
-        src : ['src/js/reveal.js', 'src/js/**/*.js'],
+        src : ['src/js/**/*.js'],
         dest : 'js/scripts.js'
       },
       css: {
-        src:  ['src/css/*.css', 'src/css/theme/*.css'],
+        src:  ['src/css/*.css'],
         dest: 'css/styles.css'
       }
     },
@@ -65,8 +65,15 @@ module.exports = function(grunt) {
             flatten: true,
             expand: true,
             filter: 'isFile',
-            src: ['src/css/print/*'],
+            src: ['src/css/print/*.css'],
             dest: 'css/print/'
+          },
+          {
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
+            src: ['src/css/theme/*.css'],
+            dest: 'css/theme/'
           }
         ]
       }
@@ -82,14 +89,15 @@ module.exports = function(grunt) {
         files: {
           'css/styles.min.css': ['css/styles.css'],
           'css/print/paper.min.css': ['css/print/paper.css'],
-          'css/print/pdf.min.css': ['css/print/pdf.css']
+          'css/print/pdf.min.css': ['css/print/pdf.css'],
+          'css/theme/avenuecode.min.css': ['css/theme/avenuecode.css']
         }
       }
     },
     sass: {
       main: {
         files: {
-          'src/css/theme/avenuecode.css': 'css/theme/source/avenuecode.scss',
+          'src/css/theme/avenuecode.css': 'src/css/theme/source/avenuecode.scss',
         }
       }
     },
@@ -115,8 +123,8 @@ module.exports = function(grunt) {
     },
     watch: {
       main: {
-        files: ['src/**/*.js', 'src/**/*.css'],
-        tasks: ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin']
+        files: ['src/**/*.js', 'src/**/*.css', 'src/**/*.html'],
+        tasks: ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin', 'replace']
       },
       theme: {
         files: ['src/css/theme/**/*.scss'],
@@ -146,13 +154,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task
-  grunt.registerTask('default', ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin', 'connect', 'watch']);
+  grunt.registerTask('default', ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin', 'replace', 'connect', 'watch']);
 
   // Compile theme
   grunt.registerTask('themes', ['sass']);
 
   // Build task
-  grunt.registerTask('build', ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin']);
+  grunt.registerTask('build', ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin', 'replace']);
 
   // Serve presentation locally
   grunt.registerTask('serve', ['connect', 'watch']);
