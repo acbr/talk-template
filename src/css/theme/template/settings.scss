@@ -10,14 +10,14 @@ $mainFontSize: 36px;
 $mainColor: #eee;
 
 // Headings
-$headingMargin: 0 0 20px 0;
-$headingFont: 'League Gothic', Impact, sans-serif;
-$headingColor: #eee;
+$headingMargin: 0 0 40px 0;
+$headingFont: 'QuickSand', sans-serif;
+$headingColor: #ddf;
 $headingLineHeight: 0.9em;
-$headingLetterSpacing: 0.02em;
+$headingLetterSpacing: -0.08em;
 $headingTextTransform: uppercase;
-$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
-$heading1TextShadow: $headingTextShadow;
+$headingTextShadow: none;
+$heading1TextShadow: none;
 
 // Links and actions
 $linkColor: #13DAEC;

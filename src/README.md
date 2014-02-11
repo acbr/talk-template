@@ -1,12 +1,12 @@
-## Talk template
+## @@title
 
 This is the standard Avenue Code template for Reveal.js slide decks.
 
-Nolan Inja @ Avenue Code
+@@author @ Avenue Code
 
-*ninja@avenuecode.com*
+*@@email*
 
-Feb 11th, 2014
+@@date
 
 ---
 

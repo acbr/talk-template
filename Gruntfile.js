@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     },
     concat: {
       js: {
-        src : ['src/js/**/*.js'],
+        src : ['src/js/head.js', 'src/js/reveal.js', 'src/js/**/*.js'],
         dest : 'js/scripts.js'
       },
       css: {
@@ -78,6 +78,40 @@ module.exports = function(grunt) {
         ]
       }
     },
+    replace: {
+      main: {
+        options: {
+          patterns: [
+            {
+              json: grunt.file.readJSON('config.json')
+            }
+          ]
+        },
+        files: [
+          {
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
+            src: ['src/index.html'],
+            dest: ''
+          },
+          {
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
+            src: ['js/scripts.js'],
+            dest: 'js/'
+          },
+          {
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
+            src: ['src/README.md'],
+            dest: ''
+          }
+        ]
+      }
+    },
     uglify: {
       build: {
         src: 'js/scripts.js',
@@ -101,30 +135,10 @@ module.exports = function(grunt) {
         }
       }
     },
-    replace: {
-      main: {
-        options: {
-          patterns: [
-            {
-              json: grunt.file.readJSON('config.json')
-            }
-          ]
-        },
-        files: [
-          {
-            flatten: true,
-            expand: true,
-            filter: 'isFile',
-            src: ['src/index.html'],
-            dest: ''
-          }
-        ]
-      }
-    },
     watch: {
       main: {
-        files: ['src/**/*.js', 'src/**/*.css', 'src/**/*.html'],
-        tasks: ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin', 'replace']
+        files: ['Gruntfile.js', 'src/**/*.js', 'src/**/*.css', 'src/**/*.html', 'src/README.md', 'config.json'],
+        tasks: ['jshint', 'csslint', 'concat', 'copy', 'replace', 'uglify', 'cssmin']
       },
       theme: {
         files: ['src/css/theme/**/*.scss'],
@@ -154,13 +168,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task
-  grunt.registerTask('default', ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin', 'replace', 'connect', 'watch']);
+  grunt.registerTask('default', ['jshint', 'csslint', 'concat', 'copy', 'replace', 'uglify', 'cssmin', 'connect', 'watch']);
 
   // Compile theme
   grunt.registerTask('themes', ['sass']);
 
   // Build task
-  grunt.registerTask('build', ['jshint', 'csslint', 'concat', 'copy', 'uglify', 'cssmin', 'replace']);
+  grunt.registerTask('build', ['jshint', 'csslint', 'concat', 'copy', 'replace', 'uglify', 'cssmin']);
 
   // Serve presentation locally
   grunt.registerTask('serve', ['connect', 'watch']);

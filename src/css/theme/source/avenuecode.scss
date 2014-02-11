@@ -10,8 +10,6 @@
 @import "../template/settings";
 // ---------------------------------------------
 
-
-
 // Include theme-specific fonts
 @font-face {
 	font-family: 'League Gothic';
@@ -23,6 +21,25 @@
 
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../font/quicksand-regular.eot');
+  src: url('../../font/quicksand-regular.eot?#iefix') format('embedded-opentype'),
+       url('../../font/quicksand-regular.woff') format('woff'),
+       url('../../font/quicksand-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../font/quicksand-bold.eot');
+  src: url('../../font/quicksand-bold.eot?#iefix') format('embedded-opentype'),
+       url('../../font/quicksand-bold.woff') format('woff'),
+       url('../../font/quicksand-bold.ttf') format('truetype');
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
@@ -40,3 +57,57 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal.center {
+  background: #415b77;
+  background: -moz-radial-gradient(center, circle cover, #415b77 0%, #2c3e50 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #415b77), color-stop(100%, #2c3e50));
+  background: -webkit-radial-gradient(center, circle cover, #415b77 0%, #2c3e50 100%);
+  background: -o-radial-gradient(center, circle cover, #415b77 0%, #2c3e50 100%);
+  background: -ms-radial-gradient(center, circle cover, #415b77 0%, #2c3e50 100%);
+  background: radial-gradient(center, circle cover, #415b77 0%, #2c3e50 100%);
+  background-color: #2c3e50;
+
+  .slides {
+    section {
+      min-height: 100%;
+
+      div.footer {
+        position: absolute;
+        width: 800px;
+        z-index: 999;
+        left: 0;
+        bottom: 20px;
+        color: #ccc;
+        height: 46px;
+        text-align: left;
+        margin-bottom: 20px;
+
+        * {
+          font-size: 24px;
+          text-align: left;
+        }
+
+        hr {
+          margin: 5px 0;
+        }
+      }
+
+      img.logo {
+        position: absolute;
+        max-height: none;
+        max-width: none;
+        width: 153px;
+        height: 109px;
+        z-index: 999;
+        right: 0;
+        bottom: 10px;
+        margin: 0px;
+        background: none;
+        box-shadow: none;
+        border: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
