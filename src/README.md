@@ -164,7 +164,7 @@ $ grunt
 
 Should you wish to contribute, please be welcome to!
 
-1. Fork this repository
+1. Fork the repository <https://github.com/acbr/talk-template>
 1. Create a feature branch for your contribution
 ```sh
 git checkout -b my-new-feature
