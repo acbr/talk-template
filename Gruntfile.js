@@ -60,13 +60,15 @@ module.exports = function(grunt) {
     },
     copy: {
       css: {
-        files: [{
-          src: ['src/css/print/*'],
-          dest: 'css/print/',
-          flatten: true,
-          filter: 'isFile',
-          expand: true
-        }]
+        files: [
+          {
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
+            src: ['src/css/print/*'],
+            dest: 'css/print/'
+          }
+        ]
       }
     },
     uglify: {
@@ -92,10 +94,21 @@ module.exports = function(grunt) {
       }
     },
     replace: {
-      options: {
-        patterns: [
+      main: {
+        options: {
+          patterns: [
+            {
+              json: grunt.file.readJSON('config.json')
+            }
+          ]
+        },
+        files: [
           {
-            json: grunt.file.readJSON('config.json')
+            flatten: true,
+            expand: true,
+            filter: 'isFile',
+            src: ['src/index.html'],
+            dest: ''
           }
         ]
       }
