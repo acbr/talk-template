@@ -46,14 +46,16 @@ Feb 11th, 2014
 1. The Avenue Code talk template is a responsive, web-based talk template.
 1. This template is based on [Reveal.JS](http://lab.hakim.se/reveal-js).
 1. All you need to do is to write your content in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-1. There are some [Grunt](http://gruntjs.com) jobs to automatize the build process for you.
+1. There are some [Grunt](http://gruntjs.com) jobs to automatize the build process.
+1. It has <span class="feature">automatic code highlighting</span>, guessing the programming language you used.
+1. Once it is described in <span class="feature">README.md</span>, the talk contents will also be available as the repository description which is a common format for tutorials.
 
 ----
 
 ## Setting up your repo
 
 1. Sign in on GitHub
-1. Fork the repository <https://github.com/acbr/talk-template.git>
+1. Fork the repository <https://github.com/acbr/talk-template>
 1. Rename it to match your talk name (ex: <span class="feature">talk-design-patterns</span>)
 1. Clone this repository
 1. Navigate to its folder on the terminal
