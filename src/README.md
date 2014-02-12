@@ -1,6 +1,6 @@
 ## @@title
 
-<img src="img/logo.jpg" />
+<img src="img/cover.jpg" class="logo" />
 
 @@author @ [Avenue Code](http://www.avenuecode.com)
 

@@ -33,11 +33,17 @@ Reveal.addEventListener('ready', function(event){
   footer += " <hr \/>";
   footer += " <div>@@title<\/div>";
   footer += "<\/div>";
-  footer += "<img src=\"https:\/\/s3.amazonaws.com\/media-p.slid.es\/uploads\/avenuecode\/images\/197088\/logo.png\" class=\"logo\" \/>";
+  footer += "<img src=\"img\/ac-logo.png\" class=\"ac-logo\" \/>";
 
   var sectionEls = document.querySelectorAll('section:not(.stack)');
   var sections = Array.prototype.slice.call(sectionEls);
   sections.forEach(function(el) {
     el.innerHTML += footer;
+  });
+
+  var itemEls = document.querySelectorAll('div.slides section:not(:first-child) li, div.slides section:not(:first-child) p');
+  var items = Array.prototype.slice.call(itemEls);
+  items.forEach(function(el) {
+    el.classList.add('fragment');
   });
 });

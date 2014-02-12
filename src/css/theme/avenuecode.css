@@ -5,13 +5,6 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @font-face {
-  font-family: 'League Gothic';
-  src: url("../../font/league_gothic-webfont.eot");
-  src: url("../../font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/league_gothic-webfont.woff") format("woff"), url("../../font/league_gothic-webfont.ttf") format("truetype"), url("../../font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
@@ -172,6 +165,8 @@ body {
   background-color: #2c3e50; }
   .reveal.center .slides section {
     min-height: 100%; }
+    .reveal.center .slides section img.logo {
+      max-height: 250px; }
     .reveal.center .slides section em {
       color: #f90 !important;
       font-style: normal; }
@@ -190,7 +185,7 @@ body {
         text-align: left; }
       .reveal.center .slides section div.footer hr {
         margin: 5px 0; }
-    .reveal.center .slides section img.logo {
+    .reveal.center .slides section img.ac-logo {
       position: absolute;
       max-height: none;
       max-width: none;

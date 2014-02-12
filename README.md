@@ -1,6 +1,6 @@
 ## Talk template
 
-<img src="img/logo.jpg" />
+<img src="img/cover.jpg" class="logo" />
 
 Tiago Garcia @ [Avenue Code](http://www.avenuecode.com)
 
