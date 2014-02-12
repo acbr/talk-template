@@ -84,12 +84,9 @@ $ grunt
 1. Open up *src/README.md* file and write your talk in plain *Markdown*.
 1. In order to separate slides horizontally, use 3 dashes (---).
 1. In order to separate slides vertically, use 4 dashes (----).
-1. In order to call out attention, use the css class *feature*:
+1. In order to *call out attention*, put an asterisk around your text:
 ```
-*WARNING* <!-- .element: class="feature" -->
-```
-```
-*WARNING*
+In order to *call out attention*, ...
 ```
 1. For every change, grunt will rebuild your talk and all you need to do is to refresh your page.
 
