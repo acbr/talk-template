@@ -1,3 +1,11 @@
+<!--
+
+WARNING!! DON'T EDIT THE FILE README.md on the root of the project, that one is a GENERATED FILE!
+
+You should just edit the source file at src/README.md - the one which stars with ## @@title
+
+-->
+
 ## @@title
 
 <img src="img/cover.jpg" class="logo" />
@@ -81,14 +89,17 @@ $ grunt
 ## Working
 
 1. Open up *config.json* and fill your talk data such as title, author, email, date and description.
-1. Open up *src/README.md* file and write your talk in plain *Markdown*.
+  - That is the *ONLY FILE* you should edit on the project root!
+1. Any further change you will do is inside the *src* folder, such as:
+  - *src/README.md* to write your talk content in *Markdown*
+  - *src/index.html* to modify the HTML
+1. Grunt will generate files on the project root as you change *src*.
 1. In order to separate slides horizontally, use 3 dashes (---).
 1. In order to separate slides vertically, use 4 dashes (----).
 1. In order to *call out attention*, put an asterisk around your text:
 ```
 In order to *call out attention*, ...
 ```
-1. For every change, grunt will rebuild your talk and all you need to do is to refresh your page.
 
 ----
 
