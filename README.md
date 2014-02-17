@@ -30,6 +30,7 @@ Feb 11th, 2014
   - Communication requirements
   - The DONT's
   - Tips
+  - If you are recording
 
 ----
 

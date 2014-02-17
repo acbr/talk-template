@@ -30,6 +30,7 @@ You should just edit the source file at src/README.md - the one which stars with
   - Communication requirements
   - The DONT's
   - Tips
+  - If you are recording
 
 ----
 
