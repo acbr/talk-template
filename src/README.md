@@ -176,7 +176,17 @@ In order to *call out attention*, ...
  - *ALWAYS* be polite when talking to your audience. This will always open doors for you.
  - People might come to you with questions and more complex cases after your talk. Consider it as a gift, it means you represent something good for them!
 
----
+----
+
+## If you are recording
+
+- Make sure you use a professional microphone when available.
+- Don't do *drastic transitions* on your screen, as the recorded amount of frames per second is low.
+- Ask atendees to only make questions on the end - so future watchers will just get the real content without interruption.
+- Introduce yourself: "Hello everybody, my name is xxxx, I work for Avenue Code and today's talk will be about yyyyy". Finish it like: "That's it, thanks for watching.".
+- Problems with recording/connection? Always restart from the beginning of the slide. Don't try to restart from where it fails, its impossible to do a clean cut on the video after that.
+
+----
 
 ## Contributing
 
