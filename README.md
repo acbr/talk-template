@@ -26,7 +26,8 @@ Feb 11th, 2014
   - Deploying
  - Your talk
   - Organization
-  - The DO's
+  - Content requirements
+  - Communication requirements
   - The DONT's
   - Tips
 
@@ -136,14 +137,23 @@ In order to *call out attention*, ...
 
 ----
 
-## The DO's
+## Content requirements
 
-1. *BE BALANCED BETWEEN THEORY AND PRACTICE*. Your target is keeping the subject interesting for everybody.
-1. *BE CONSISTENT*. Please watch some good screencasts in order to learn how to use your voice and conduct the talk.
-1. *BE POLITE*. Don't use slangs neither bad words.
-1. *BE OBJECTIVE*. Don't overexplain in such way you could cause confusion to your attendees.
+1. *BE CONSISTENT*. Master the subject and do not contradict yourself.
+1. *CATCH THE ATTENTION*. Let the audience know WHY they cannot live one more day without this technology.
+1. *BALANCE THEORY AND PRACTICE*. Your target is keeping the subject interesting for everybody.
+1. *BE CONCISE*. Don't overexplain in such way you could cause confusion to your attendees.
 1. *KEEP THE FOCUS*. Off-topic discussions are ok, but only if it doesn't disturb the natural flow of your content.
 1. *BE PREPARED*. If you are going to use examples or live coding, make sure you have them all prepared beforehand.
+
+----
+
+## Communication requirements
+
+1. *COMMUNICATE WELL*. Be sharp on English, no bad words or slangs and use the best words for the audience.
+1. *BE A PRO*. Please watch some good screencasts in order to learn how to use your voice and conduct the talk.
+1. *BE POLITE*. Be respectful and avoid heavy criticism.
+1. *BE PROFESSIONAL*. Use jokes and humor with parsimony.
 1. *TRAIN* your full talk at least once before your talk.
 
 ----
@@ -154,7 +164,7 @@ In order to *call out attention*, ...
 1. *DON'T BE ARROGANT*. Be humble and don't focus the talk on yourself.
 1. *DON'T GENERALIZE*, specially stuff that you are not sure about.
 1. *DON'T MAKE UP DATA*. Base yourself on trustable references.
-1. *DON'T BE BORING*. Just be yourself. It is ok to joke around, but don't exaggerate.
+1. *DON'T TALK LIKE A ROBOT*. Just be yourself, natural. Relax :)
 
 ----
 
