@@ -187,7 +187,7 @@ In order to *call out attention*, ...
 - Introduce yourself: "Hello everybody, my name is xxxx, I work for Avenue Code and today's talk will be about yyyyy". Finish it like: "That's it, thanks for watching.".
 - Problems with recording/connection? Always restart from the beginning of the slide. Don't try to restart from where it fails, its impossible to do a clean cut on the video after that.
 
-----
+---
 
 ## Contributing
 
