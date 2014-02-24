@@ -1,10 +1,6 @@
 {
-  "name": "talk-es6",
+  "name": "talk-template",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/fegemo/talk-es6.git"
-  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",

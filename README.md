@@ -2,36 +2,52 @@
 
 WARNING!! DON'T EDIT THE FILE README.md on the root of the project, that one is a GENERATED FILE!
 
-You should just edit the source file at src/README.md - the one which stars with ## Ecmascript 6: Bring some harmony into your life
+You should just edit the source file at src/README.md - the one which stars with ## Talk template
 
 -->
 
-## Ecmascript 6: Bring some harmony into your life
+## Talk template
 
 <img src="img/cover.jpg" class="logo" />
 
-Flavio Coutinho @ [Avenue Code](http://www.avenuecode.com)
+Tiago Garcia @ [Avenue Code](http://www.avenuecode.com)
 
-*fcoutinho@avenuecode.com*
+*tgarcia@avenuecode.com*
 
-Mar 30th, 2014
+Feb 11th, 2014
 
 ---
 
 ## Agenda
 
-- A (brief) history of JS
-- 'Looks Familiar?' series
-- Running Ecmascript 6
-- Conclusion
-- Challenge
+ - The template
+  - Installing
+  - Working
+  - Deploying
+ - Your talk
+  - Organization
+  - Content requirements
+  - Communication requirements
+  - The DONT's
+  - Tips
+  - If you are recording
+
+----
+
+## Agenda
+
+ - Contributing
+ - Learn more
+ - Conclusion
+ - Assignment
 
 ---
 
 ## Prerequisites
 
-- Some experience with real-life javascript
-- Open mind
+- Markdown
+- Reveal.js
+- Grunt
 
 ---
 
