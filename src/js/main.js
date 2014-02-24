@@ -27,13 +27,12 @@ Reveal.initialize({
   ]
 });
 
-Reveal.addEventListener('ready', function(event){
-  var footer = "";
-  footer += "<div class=\"footer\">";
-  footer += " <hr \/>";
-  footer += " <div>@@title<\/div>";
-  footer += "<\/div>";
-  footer += "<img src=\"img\/ac-logo.png\" class=\"ac-logo\" \/>";
+Reveal.addEventListener('ready', function() {
+  'use strict';
+
+  var footer = TEMPLATES.footer({
+    title: '@@title'
+  });
 
   var sectionEls = document.querySelectorAll('section:not(.stack)');
   var sections = Array.prototype.slice.call(sectionEls);
