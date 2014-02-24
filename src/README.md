@@ -20,34 +20,18 @@ You should just edit the source file at src/README.md - the one which stars with
 
 ## Agenda
 
- - The template
-  - Installing
-  - Working
-  - Deploying
- - Your talk
-  - Organization
-  - Content requirements
-  - Communication requirements
-  - The DONT's
-  - Tips
-  - If you are recording
-
-----
-
-## Agenda
-
- - Contributing
- - Learn more
- - Conclusion
- - Assignment
+- A (brief) history of JS
+- 'Looks Familiar?' series
+- Running Ecmascript 6
+- Conclusion
+- Challenge
 
 ---
 
 ## Prerequisites
 
-- Markdown
-- Reveal.js
-- Grunt
+- Some experience with real-life javascript
+- Open mind
 
 ---
 
