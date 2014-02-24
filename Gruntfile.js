@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
-  var port = grunt.option('port') || 8000;
+  var port = grunt.option('port') || 8000,
+      path = require('path');
 
   // Project configuration
   grunt.initConfig({
@@ -21,7 +22,9 @@ module.exports = function(grunt) {
           head: false,
           module: false,
           console: false,
-          unescape: false
+          unescape: false,
+          require: true,
+          TEMPLATES: true
         }
       },
       files: ['Gruntfile.js', 'src/js/**/*.js']
@@ -50,7 +53,7 @@ module.exports = function(grunt) {
     },
     concat: {
       js: {
-        src : ['src/js/head.js', 'src/js/reveal.js', 'src/js/**/*.js'],
+        src : ['src/js/head.js', 'src/js/reveal.js', 'js/lib/handlebars.runtime.min.js', 'template/handlebars.js', 'src/js/**/*.js'],
         dest : 'js/scripts.js'
       },
       css: {
@@ -135,10 +138,24 @@ module.exports = function(grunt) {
         }
       }
     },
+    handlebars: {
+      compile: {
+        options: {
+          namespace: 'TEMPLATES',
+          processName: function(filePath) {
+            return path.basename(filePath, '.hbs');
+          }
+        },
+        files: [{
+          src: ['src/template/*.hbs'],
+          dest: 'template/handlebars.js'
+        }]
+      }
+    },
     watch: {
       main: {
-        files: ['Gruntfile.js', 'src/**/*.js', 'src/**/*.css', 'src/**/*.html', 'src/README.md', 'config.json'],
-        tasks: ['jshint', 'csslint', 'concat', 'copy', 'replace', 'uglify', 'cssmin']
+        files: ['Gruntfile.js', 'src/**/*.js', 'src/**/*.css', 'src/**/*.html', 'src/**/*.hbs', 'src/README.md', 'config.json'],
+        tasks: ['jshint', 'csslint', 'handlebars', 'concat', 'copy', 'replace', 'uglify', 'cssmin']
       },
       theme: {
         files: ['src/css/theme/**/*.scss'],
@@ -152,7 +169,7 @@ module.exports = function(grunt) {
           base: '.'
         }
       }
-    },
+    }
   });
 
   // Dependencies
@@ -166,15 +183,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-handlebars');
 
   // Default task
-  grunt.registerTask('default', ['jshint', 'csslint', 'concat', 'copy', 'replace', 'uglify', 'cssmin', 'connect', 'watch']);
+  grunt.registerTask('default', ['jshint', 'csslint', 'handlebars', 'concat', 'copy', 'replace', 'uglify', 'cssmin', 'connect', 'watch']);
 
   // Compile theme
   grunt.registerTask('themes', ['sass']);
 
   // Build task
-  grunt.registerTask('build', ['jshint', 'csslint', 'concat', 'copy', 'replace', 'uglify', 'cssmin']);
+  grunt.registerTask('build', ['jshint', 'csslint', 'handlebars', 'concat', 'copy', 'replace', 'uglify', 'cssmin']);
 
   // Serve presentation locally
   grunt.registerTask('serve', ['connect', 'watch']);
