@@ -4600,11 +4600,11 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "<div class=\"footer\">\r\n  <hr>\r\n  <div>";
+  buffer += "<div class=\"footer\">\n  <hr>\n  <div>";
   if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = (depth0 && depth0.title); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
   buffer += escapeExpression(stack1)
-    + "</div>\r\n</div>\r\n<img src=\"img/ac-logo.png\" class=\"ac-logo\">";
+    + "</div>\n</div>\n<img src=\"img/ac-logo.png\" class=\"ac-logo\">";
   return buffer;
   });
 /* global Reveal */
@@ -4640,7 +4640,7 @@ Reveal.addEventListener('ready', function() {
   'use strict';
 
   var footer = TEMPLATES.footer({
-    title: 'Ecmascript 6: Have some harmony in your life'
+    title: 'Talk template'
   });
 
   var sectionEls = document.querySelectorAll('section:not(.stack)');
