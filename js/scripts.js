@@ -4640,7 +4640,7 @@ Reveal.addEventListener('ready', function() {
   'use strict';
 
   var footer = TEMPLATES.footer({
-    title: 'Talk template'
+    title: 'Introduction to Mule'
   });
 
   var sectionEls = document.querySelectorAll('section:not(.stack)');
